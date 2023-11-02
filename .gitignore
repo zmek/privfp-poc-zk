@@ -10,6 +10,7 @@
 *.pot
 __pycache__/*
 .cache/*
+notebooks/cache.sqlite
 .*.swp
 */.ipynb_checkpoints/*
 
