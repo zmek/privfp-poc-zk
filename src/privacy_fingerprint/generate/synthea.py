@@ -94,7 +94,7 @@ def load_dummy_data_from_directory(
     experiment_config = load_experiment_config()
     output = {
         i: pd.read_csv(os.path.join(directory_path, "csv", f"{i}.csv"))
-        for i in ["patients", "encounters", "organizations", "providers"]
+        for i in ["patients", "encounters"]  # , "organizations", "providers"]
     }
     if experiment_config.synthea.encounter_type is not None:
         if isinstance(experiment_config.synthea.encounter_type, list):
