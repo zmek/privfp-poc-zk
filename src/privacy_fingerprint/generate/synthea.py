@@ -34,6 +34,7 @@ def generate_records(output_directory: str) -> List[Dict[str, Any]]:
         output_directory,
         experiment_config.synthea.extra_config,
     )
+    print(experiment_config.synthea.encounter_type)
     return prepare_records(
         dummy_data, encounter_type=experiment_config.synthea.encounter_type
     )
