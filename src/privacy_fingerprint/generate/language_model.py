@@ -16,7 +16,9 @@ from privacy_fingerprint.common.models import LLM, generate_id
 
 import os
 from dotenv import load_dotenv
-load_dotenv() 
+
+load_dotenv()
+
 
 class LMGenerator:
     """A base language model generator"""
@@ -107,8 +109,8 @@ class LMGenerator:
         :param query: List of queries to send to the openai API
         :returns: Iterable of text results from the openai API"""
         config = load_global_config()
-        # openai.api_key = config.openai.api_key
-        openai.api_key = os.getenv('OPENAI_API_KEY')
+        openai.api_key = config.openai.api_key
+        # openai.api_key = os.getenv('OPENAI_API_KEY')
         openai_result = openai.Completion.create(
             model=self.model,
             prompt=query,

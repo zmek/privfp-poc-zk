@@ -22,7 +22,12 @@ synthea:
   #  Encounter for symptom
   #  Hospital admission
   #  Emergency room admission
-  encounter_type: "Encounter Inpatient"
+  encounter_type: 'Admission to surgical department'
+    # - "Encounter Inpatient"
+    # - "Inpatient stay (finding)"
+    # - "Admission to surgical department"
+    # - "Admission to thoracic surgery department"
+    # - "Hospital admission"
   # This is the nunmber of living people generated. 
   # Additional people may be generated if some have died.
   # Some people may not have had the specified encounter type.

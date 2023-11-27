@@ -60,5 +60,6 @@ data/
 
 # secret
 .secret
+configs/global_configs.yaml
 
 experiments
